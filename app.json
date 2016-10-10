@@ -31,6 +31,17 @@
             "value": "glip.com",
             "required": false
         },
+        "HUBOT_JIRA_LINKIFIER_PROJECT_PREFIXES": {
+            "description": "JIRA prefixes to inflate",
+            "value": "",
+            "required": true
+        },
+        "HUBOT_JIRA_LINKIFIER_JIRA_URL": {
+            "description": "JIRA URL",
+            "value": "",
+            "required": false
+        },
+
         "HUBOT_GETSATISFACTION_COMPANY": {
             "description": "Get Satisfaction Company Name",
             "value": "ringcentral",
