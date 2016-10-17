@@ -31,8 +31,12 @@ auth_url = "#{sf_instance}/services/oauth2/token?grant_type=password&client_id=#
 
 query_url = "#{sf_instance}/services/data/v20.0/query?q="
 
+new_case_url = (account_id) ->
+  "#{sf_instance}500/e?retURL=%2F#{account_id}&def_account_id=#{account_id}"
+
 account_item = (account) ->
-  "* [#{account.Name}](#{sf_instance}#{account.Id}) Account - Tel: #{account.Phone} - Owner: [#{account.Owner.Name}](#{sf_instance}#{account.Owner.Id})\n"
+  new_case = "[New Case](#{new_case_url(account.Id)})"
+  "* [#{account.Name}](#{sf_instance}#{account.Id}) Account - Tel: #{account.Phone} - Owner: [#{account.Owner.Name}](#{sf_instance}#{account.Owner.Id}) - #{new_case}\n"
 
 module.exports = (robot) ->
 
