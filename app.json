@@ -69,7 +69,7 @@
         },
         "SF_INSTANCE_URL": {
             "description": "url of your salesforce instance eg. https://na2.salesforce.com",
-            "value": "ringcentral",
+            "value": "",
             "required": false
         },
         "SF_CONSUMER_KEY": {
