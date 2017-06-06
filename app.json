@@ -88,7 +88,7 @@
             "required": true
         },
         "SF_PASSWORD": {
-            "description": "assword and security token mashed together",
+            "description": "password and security token mashed together",
             "value": "",
             "required": false
         }
